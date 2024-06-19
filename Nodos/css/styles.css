@@ -1,80 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:root{
-  --starchip--:#F3DB4C;
-  --MineShaft--:#343434;
-  --Husk--:#B2A443;
-  --Sycamore--:#94843C;
-  --white--:#ffff;
-  --padding:8px;
-  --margin:10px;
-  --border-radius:8px;
-  --transition:1s;
-  --maxwidth:1400px;
+:root {
+  --starchip--: #f3db4c;
+  --MineShaft--: #343434;
+  --Husk--: #b2a443;
+  --Sycamore--: #94843c;
+  --white--: #ffff;
+  --padding: 8px;
+  --margin: 10px;
+  --border-radius: 8px;
+  --transition: 1s;
+  --maxwidth: 1400px;
 }
-::selection{
+::selection {
   background: var(--starchip--);
   color: var(--MineShaft--);
 }
-body{
+body {
   font-family: "Open Sans", sans-serif;
-  background:var(--MineShaft--);
+  background: var(--MineShaft--);
   color: var(--starchip--);
   line-height: 24px;
-
 }
-header{
+header {
   text-align: center;
-  border-bottom:solid 1px var(--Sycamore--) ;
+  border-bottom: solid 1px var(--Sycamore--);
   margin-bottom: var(--margin);
 }
-section{
+section {
   padding: var(--padding);
 }
-a{
+.bg--green {
+  background: var(--white--);
+  color: var(--MineShaft--);
+}
+.paragraph__card {
+  color: var(--MineShaft--);
+}
+.card__paragraph a {
   color: var(--Husk--);
   text-decoration: none;
 }
-h1,h2{
-  padding: var(--padding); 
+h1,
+h2 {
+  padding: var(--padding);
 }
-p{
+p {
   font-size: 1rem;
   margin: 0 0 var(--margin);
-  color:  var(--white--);
+  color: var(--white--);
 }
-p::first-letter{
+p::first-letter {
   font-size: 1.4rem;
   color: var(--starchip--);
   font-weight: 700;
 }
-ul{
+ul {
   list-style: none;
-
 }
-ul.list > li.item{
-cursor: pointer;
+ul.list > li.item {
+  cursor: pointer;
 }
-li.item:hover a{
+li.item:hover a {
   color: var(--MineShaft--);
 }
-.container{
+.container {
   max-width: var(--maxwidth);
   margin: 0 auto;
   padding: var(--padding);
 }
-.margin--bottom{
+.margin--bottom {
   margin-bottom: var(--margin);
 }
-.search{
+.search {
   display: flex;
   justify-content: end;
 }
-.search__form{
+.search__form {
   border: solid 1px var(--starchip--);
   border-radius: var(--border-radius);
   padding: var(--padding);
@@ -84,43 +90,42 @@ li.item:hover a{
   grid-template-rows: auto;
   gap: 4px;
 }
-.input{
+.input {
   width: 100%;
   padding: var(--padding);
   outline: none;
   border-radius: var(--border-radius);
   border: none;
 }
-.cards{
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-.card{
+.card {
   width: 450px;
   border: solid 1px var(--Husk--);
   border-radius: var(--border-radius);
   margin: 0 auto;
-
 }
-.card__header{
+.card__header {
   padding: var(--padding);
 }
-.card__title{
+.card__title {
   text-wrap: wrap;
   word-break: break-all;
 }
-.card__body{
+.card__body {
   padding: var(--padding);
 }
-.card__img{
+.card__img {
   width: 100%;
 }
-.card__paragraph{
+.card__paragraph {
   padding: var(--padding);
 }
-.button{
-  background:var(--starchip--);
+.button {
+  background: var(--starchip--);
   color: var(--MineShaft--);
   padding: var(--padding);
   border-radius: var(--border-radius);
@@ -130,42 +135,40 @@ li.item:hover a{
   display: inline-flex;
   align-items: center;
 }
-.button--outline{
+.button--outline {
   background: var(--MineShaft--);
-  color: var(--starchip--); 
+  color: var(--starchip--);
 }
-.button:hover{
+.button:hover {
   transition: var(--transition);
   background: var(--MineShaft--);
-    color: var(--starchip--); 
+  color: var(--starchip--);
 }
-.button--outline:hover{
+.button--outline:hover {
   background: var(--starchip--);
   color: var(--MineShaft--);
 }
-.button__text{
-
+.button__text {
 }
-.button__icon{
+.button__icon {
   font-size: 1.4rem;
 }
-.list{
+.list {
   text-align: center;
   padding: var(--padding);
 }
-.item{
+.item {
   border-bottom: solid 1px var(--Husk--);
   padding: var(--padding);
   transition: var(--transition);
   font-size: 1.2rem;
 }
-.item:hover{
+.item:hover {
   background: var(--Sycamore--);
   color: var(--MineShaft--);
 }
-ul.list >li.item a:visited{
+ul.list > li.item a:visited {
   color: var(--starchip--);
 }
-.item:last-child{
-
+.item:last-child {
 }
