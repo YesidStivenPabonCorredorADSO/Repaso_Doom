@@ -1,0 +1,10 @@
+input {
+  outline: none;
+}
+
+.error {
+  border: solid 1px red;
+}
+.bien {
+  border: solid 1px green;
+}
