@@ -3,6 +3,7 @@ let dom = document;
 let body = dom.body;
 let form = dom.forms;
 // Nuevas
+
 let divs = dom.querySelectorAll("div");
 let div = dom.querySelector("div");
 let porId_Nuevo = dom.querySelector("#documento");

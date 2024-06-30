@@ -5,6 +5,12 @@ const $fragmento = document.createDocumentFragment();
 const $section = document.createElement("section");
 $section.classList.add("cards");
 console.log($plantilla);
+// 
+
+// 
+// 
+// 
+// 
 comentarios().then((lista) => {
   lista.forEach((comentario) => {
     $plantilla.querySelector("div >h2").textContent = comentario.name;
